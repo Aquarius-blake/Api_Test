@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
 import 'package:http/http.dart';
 
@@ -22,6 +24,7 @@ class _HomeState extends State<Home> {
     final String rlink="http://worldtimeapi.org/api/timezone/Europe/Berlin";
     Uri link=Uri.parse(rlink);
     Response rep= await get(link);
+    Map info=jsonDecode(rep.body);
     print(rep.body);
   }
 
