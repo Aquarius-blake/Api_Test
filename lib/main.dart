@@ -21,7 +21,7 @@ Response rep= await get(link);
 
 @override
 void initState(){
-
+data();
 }
 
 class _HomeState extends State<Home> {
