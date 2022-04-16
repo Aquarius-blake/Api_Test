@@ -7,7 +7,7 @@ class Tempdata{
   String Location="";
   String date="";
   String url="";
-Tempdata({required this.url});
+Tempdata({required this.url,required this.Location});
 
  Future <void> data()async{
     final String rlink="http://worldtimeapi.org/api/timezone/Europe/$url";
