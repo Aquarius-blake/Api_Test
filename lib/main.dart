@@ -13,6 +13,14 @@ class Home extends StatefulWidget {
   @override
   State<Home> createState() => _HomeState();
 }
+void data()async{
+
+}
+
+@override
+void initState(){
+
+}
 
 class _HomeState extends State<Home> {
   @override
