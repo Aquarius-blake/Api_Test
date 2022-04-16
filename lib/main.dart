@@ -56,6 +56,7 @@ Tempdata instance=Tempdata(url: 'Berlin',Location: 'Berlin');
 
       ),
       appBar: AppBar(
+        backgroundColor: Colors.blue[200],
         title: Title(color: Colors.white,
             child: Text("Api Test")
         ),
