@@ -23,7 +23,7 @@ String date="";
 
   @override
   void initState(){
-    data();
+    Tempdata.data();
   }
   @override
   Widget build(BuildContext context) {

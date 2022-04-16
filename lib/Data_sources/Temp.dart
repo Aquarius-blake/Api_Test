@@ -7,8 +7,9 @@ class Tempdata{
   String Location="";
   String date="";
   String url="";
+
   void data()async{
-    final String rlink="http://worldtimeapi.org/api/timezone/Europe/London";
+    final String rlink="http://worldtimeapi.org/api/timezone/Europe/$url";
     Uri link=Uri.parse(rlink);
     Response rep= await get(link);
     Map info=jsonDecode(rep.body);
