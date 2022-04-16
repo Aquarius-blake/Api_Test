@@ -19,7 +19,7 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
 
   void data()async{
-    final String rlink="http://worldtimeapi.org/api/timezone/Europe";
+    final String rlink="http://worldtimeapi.org/api/timezone/Europe/Berlin";
     Uri link=Uri.parse(rlink);
     Response rep= await get(link);
     print(rep.body);
