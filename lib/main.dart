@@ -28,7 +28,7 @@ children: [
 color: Colors.blue[200],
     ),
       child: Column(
-        children: [
+        children: <Widget>[
 
         ],
       )
