@@ -25,6 +25,8 @@ class _HomeState extends State<Home> {
     Uri link=Uri.parse(rlink);
     Response rep= await get(link);
     Map info=jsonDecode(rep.body);
+
+    String date= info["datetime"];
     print(rep.body);
   }
 
