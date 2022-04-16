@@ -21,7 +21,7 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
 String date="";
 
-Tempdata instance=Tempdata(url: 'Berlin');
+Tempdata instance=Tempdata(url: 'Berlin',Location: 'Berlin');
   @override
   void initState(){
     instance.data();
@@ -47,7 +47,9 @@ Tempdata instance=Tempdata(url: 'Berlin');
             ListTile(
             leading: Text(instance.date),
             ),
-            ListTile()
+            ListTile(
+              leading: Text(instance.Location),
+            )
 
           ],
         ),
