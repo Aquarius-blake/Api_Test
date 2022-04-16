@@ -4,4 +4,7 @@ import 'dart:convert';
 
 class Tempdata{
 
+String Location="";
+String date="";
+
 }
