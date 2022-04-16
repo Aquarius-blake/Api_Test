@@ -14,19 +14,21 @@ class Home extends StatefulWidget {
   @override
   State<Home> createState() => _HomeState();
 }
-void data()async{
-  final String rlink="http://worldtimeapi.org/api/timezone/Europe";
-  Uri link=Uri.parse(rlink);
-  Response rep= await get(link);
-  print(rep.body);
-}
 
-@override
-void initState(){
-  data();
-}
 
 class _HomeState extends State<Home> {
+
+  void data()async{
+    final String rlink="http://worldtimeapi.org/api/timezone/Europe";
+    Uri link=Uri.parse(rlink);
+    Response rep= await get(link);
+    print(rep.body);
+  }
+
+  @override
+  void initState(){
+    data();
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
