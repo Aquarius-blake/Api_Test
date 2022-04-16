@@ -24,7 +24,7 @@ String date="";
 Tempdata instance=Tempdata(url: "Berlin");
   @override
   void initState(){
-    ;
+    instance.data();
   }
   @override
   Widget build(BuildContext context) {
