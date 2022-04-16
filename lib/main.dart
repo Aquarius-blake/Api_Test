@@ -45,7 +45,7 @@ Tempdata instance=Tempdata(url: 'Berlin');
                 )
             ),
             ListTile(
-            leading: Text("$date"),
+            leading: Text("$instance.date"),
             ),
             ListTile()
 
