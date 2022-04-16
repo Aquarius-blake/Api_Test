@@ -21,9 +21,10 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
 String date="";
 
+Tempdata instance=Tempdata(url: "Berlin");
   @override
   void initState(){
-    Tempdata.data();
+    ;
   }
   @override
   Widget build(BuildContext context) {
