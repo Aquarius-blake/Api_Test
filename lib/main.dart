@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:http/http.dart';
 
 void main(){
 runApp(MaterialApp(
@@ -15,6 +16,7 @@ class Home extends StatefulWidget {
 }
 void data()async{
 Uri link=Uri.parse("http://worldtimeapi.org/api/timezone/Europe");
+Response rep= await get(link);
 }
 
 @override
