@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart';
 
 void main(){
-runApp(MaterialApp(
-  home: Home(),
-)
-);
+  runApp(MaterialApp(
+    home: Home(),
+  )
+  );
 }
 
 class Home extends StatefulWidget {
@@ -15,46 +15,47 @@ class Home extends StatefulWidget {
   State<Home> createState() => _HomeState();
 }
 void data()async{
-Uri link=Uri.parse("http://worldtimeapi.org/api/timezone/Europe");
-Response rep= await get(link);
-print(rep.body);
+  final String rlink="http://worldtimeapi.org/api/timezone/Europe";
+  Uri link=Uri.parse(rlink);
+  Response rep= await get(link);
+  print(rep.body);
 }
 
 @override
 void initState(){
-data();
+  data();
 }
 
 class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-drawer: Drawer(
-  backgroundColor: Colors.white38,
+      drawer: Drawer(
+        backgroundColor: Colors.white38,
 
-  child: ListView(
-children: [
-  DrawerHeader(
-    decoration: BoxDecoration(
-color: Colors.blue[200],
-    ),
-      child: Column(
-        children: <Widget>[
+        child: ListView(
+          children: [
+            DrawerHeader(
+                decoration: BoxDecoration(
+                  color: Colors.blue[200],
+                ),
+                child: Column(
+                  children: <Widget>[
 
-        ],
-      )
-  ),
-  ListTile(
+                  ],
+                )
+            ),
+            ListTile(
 
-  ),
-  ListTile()
+            ),
+            ListTile()
 
-],
-  ),
+          ],
+        ),
 
-),
+      ),
       appBar: AppBar(
-        title: Title(color: Colors.white, 
+        title: Title(color: Colors.white,
             child: Text("Api Test")
         ),
       ),
