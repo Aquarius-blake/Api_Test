@@ -21,26 +21,24 @@ class _HomeState extends State<Home> {
 drawer: Drawer(
   backgroundColor: Colors.white38,
 
-  child: SingleChildScrollView(
-    child: ListView(
+  child: ListView(
 children: [
-    DrawerHeader(
-      decoration: BoxDecoration(
+  DrawerHeader(
+    decoration: BoxDecoration(
 color: Colors.blue[200],
-      ),
-        child: Column(
-          children: <Widget>[
-
-          ],
-        )
     ),
-    ListTile(
+      child: Column(
+        children: <Widget>[
 
-    ),
-    ListTile()
+        ],
+      )
+  ),
+  ListTile(
+
+  ),
+  ListTile()
 
 ],
-    ),
   ),
 
 ),
