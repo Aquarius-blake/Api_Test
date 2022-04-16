@@ -19,7 +19,7 @@ class Home extends StatefulWidget {
 
 
 class _HomeState extends State<Home> {
-late String date;
+String date="";
   void data()async{
     final String rlink="http://worldtimeapi.org/api/timezone/Europe/London";
     Uri link=Uri.parse(rlink);
