@@ -21,6 +21,11 @@ class _HomeState extends State<Home> {
 drawer: Drawer(
 
 ),
+      appBar: AppBar(
+        title: Title(color: Colors.white, 
+            child: Text("Api Test")
+        ),
+      ),
     );
   }
 }
