@@ -27,7 +27,12 @@ children: [
     decoration: BoxDecoration(
 color: Colors.blue[200],
     ),
-      child: Text("")),
+      child: Column(
+        children: [
+
+        ],
+      )
+  ),
   ListTile(
 
   ),
