@@ -27,7 +27,7 @@ class _HomeState extends State<Home> {
     Map info=jsonDecode(rep.body);
 
     String date= info["datetime"];
-    print(rep.body);
+    print(date);
   }
 
   @override
