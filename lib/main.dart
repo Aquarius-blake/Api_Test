@@ -14,7 +14,7 @@ class Home extends StatefulWidget {
   State<Home> createState() => _HomeState();
 }
 void data()async{
-
+Uri link=Uri.parse("http://worldtimeapi.org/api/timezone/Europe");
 }
 
 @override
