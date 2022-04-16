@@ -19,14 +19,14 @@ class Home extends StatefulWidget {
 
 
 class _HomeState extends State<Home> {
-
+late String date;
   void data()async{
     final String rlink="http://worldtimeapi.org/api/timezone/Europe/London";
     Uri link=Uri.parse(rlink);
     Response rep= await get(link);
     Map info=jsonDecode(rep.body);
 
-    String date= info["datetime"];
+     date= await info["datetime"];
     print(date);
   }
 
@@ -53,7 +53,7 @@ class _HomeState extends State<Home> {
                 )
             ),
             ListTile(
-
+            leading: Text("$date"),
             ),
             ListTile()
 
